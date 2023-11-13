@@ -633,7 +633,69 @@
         color: $title;
     }
 }
+
+
+/* ==== ABOUT =============================================================================== */
   
+.about {
+    &__prev {
+        background-image: url('./../images/about-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        padding: 160px 0;
+        text-align: center;
+        margin-top: -53px;
+    }
+    &__prev-title {
+        @extend %title-font;
+        color: $title;
+        font-size: 60px;
+        line-height: 80px; 
+    }
+    &__content {
+        padding: 130px 0 40px;
+    }
+    &__title {
+        width: 822px;
+        color: $title;
+        @extend %title-font;
+        font-size: 36px;
+        line-height: 60px; 
+        margin-bottom: 22px;
+        padding-bottom: 22px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 12.5rem;
+            height: 2px;
+            background: #6D7278;
+        }
+    }
+    &__text {
+        padding-left: 284px;
+        p {
+            margin-bottom: 30px;
+        }
+    }
+    &__popup {
+        background-image: url('./../images/popup-bg.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: top center;
+        min-height: 414px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__popup-play {}
+    &__popup-imgbtn {}
+}
+    
+      
     
     
     
@@ -643,21 +705,7 @@
     
     
     
-    
-    // .container-fluid {
-    // }
-    // .mix {
-    // }
-    // .bedroom {
-    // }
-    // .living {
-    // }
-    // .office {
-    // }
-    // .dining {
-    // }
-    // .chair {
-    // }
+
     
   
     
