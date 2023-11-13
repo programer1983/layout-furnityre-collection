@@ -37,6 +37,22 @@
         color: rgba(54, 56, 56, 0.90);
         line-height: 22px;
     }
+    &__list-link--active {
+        padding-bottom: 4px;
+        position: relative;
+        &::after {
+            content: '';
+            position: absolute;
+            width: 53px;
+            height: 2px;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            border-radius: 1px;
+            opacity: 0.7001;
+            background: rgba($title, .7);
+        }
+    }
 }
 
 .logo {
@@ -249,6 +265,30 @@
     }
 }
 
+
+/* ===== BREADCRUMS ========================================================================== */
+
+.breadcrums {
+    background: rgba(#DFDFDF, .5);
+    padding: 13px 0 14px 0;
+    &__list {
+        display: flex;
+    }
+    &__item::after {
+        content: '/';
+        margin-left: -4px;
+        margin-right: 4px;
+    }
+    &__item:last-child::after {
+        display: none;
+    }
+    &__link {
+        color: $default;
+        font-size: 14px;
+        line-height: 28px; 
+    }
+}
+   
 /* ===== TOP ===================================================================== */
 
 .top {
